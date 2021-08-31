@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Landing Page</title>
+</head>
+<body>
+  <header>
+     <div class="img">
+       <div class="content"></div> 
+    </div>
+    <a class="logo">LandingPage</a>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>What we are</li>
+        <li>Contact us</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="home">
+  
+    <h1 class="title">
+      We make art with our hearts <br> We make difrences and the iquality <br> We, are landing page
+    </h1>
+    
+    <button class="join">Join Us</button>
+    
+    <img src="./img/people" alt="" class="hands">
+  </div>
+  
+  <script>
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector('header');
+      const home = document.querySelector(".home");
+      header.classList.toggle('scrolling', window.scrollY > 0)
+      home.classList.toggle('show', window.scrollY > 0)
+
+    })
+  </script>
+</body>
+</html>
